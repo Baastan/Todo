@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC&family=Playwrite+SK:wght@100..400&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+}
+.container{
+    margin: 0 auto;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Playwrite SK", cursive;
+}
+h1{
+    font-size: 55px;
+    color: darkblue;
+}
+
+.mainBlock{
+    width: 800px;
+    background-color: rgba(0, 0, 139, 0.584);
+    box-shadow: 0 0 30px rgb(49, 48, 48);
+    margin-bottom: 2em;
+    padding-left: 2em;
+    padding-right: 3em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.mainBlock div {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-column-gap: 5px;
+}
+
+
+.texIn{
+    height: 2em;
+    text-align: center;
+}
+
+.taskItem{
+    color: white;
+    display: grid;
+    grid-template-columns: 10fr 1fr 1fr;
+   
+}
+
+.btn{
+    width: 25px;
+    cursor: pointer;
+    transition: 0.1s;
+
+}
+.btn:active{
+    transition: 0.1s;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 10px green;
+}
+
+
+.btn2{
+    width: 35px;
+    cursor: pointer;
+}
+.btn2:active{
+    transition: 0.1s;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 10px red;
+}
+.done{
+    text-decoration: line-through red;
+    transition: 1s;
+}
+
+
+#AddBtn:active{
+    background-color: lawngreen;
+    box-shadow: 0 0 5px 5px lawngreen;
+}
+
+/* 
+.playwrite-sk-<uniquifier> {
+    font-family: "Playwrite SK", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  } */
